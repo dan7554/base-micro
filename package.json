@@ -5,17 +5,18 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel src -d lib && node lib/index.js --prod",
-    "build": "babel src -d lib"
+    "start": "babel src -d lib --copy-files && node lib/index.js --prod",
+    "build": "babel src -d lib --copy-files"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
-    "swagger-ui-dist": "^3.17.0"
+    "swagger-ui-express": "^3.0.9"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0"
   }
 }
+
