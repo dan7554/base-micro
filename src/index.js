@@ -18,7 +18,7 @@ var options = {
     explorer : true
   };
    
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options));
-app.listen(3110);
+app.use('/swag', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options));
+app.listen(3111);
 
 console.log('app listening ...', app.serverConfig);

@@ -1,5 +1,5 @@
 class UserController {
-    static login(req, res) {
+    static async login(req, res) {
         res.send('Hi')
     }
 }
