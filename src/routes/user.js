@@ -3,6 +3,6 @@ import UserController from '../controllers/UserController';
 
 let router = express.Router();
 
-router.get('/login',  UserController.login );
+router.post('/login',  UserController.login );
 
 module.exports = router;

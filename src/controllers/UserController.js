@@ -1,6 +1,9 @@
 class UserController {
     static async login(req, res) {
-        res.send('Hi')
+
+        console.log('req',JSON.stringify(req.body))
+
+        res.send(JSON.stringify(req.body))
     }
 }
 
